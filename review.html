@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>¡Gracias por tu reseña!</h2>
+    <p>Reseñaste el producto: <strong><span id="reviewed-product"></span></strong></p>
+    <p>Total de reseñas enviadas: <span id="review-count">0</span></p>
+    <a href="form.html">Enviar otra reseña</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get("product");
+
+            const productNames = {
+                "fc-1888": "Flux Capacitor",
+                "fc-2050": "Power Laces",
+                "fs-1987": "Time Circuits",
+                "ac-2000": "Low Voltage Reactor",
+                "jj-1969": "Warp Equalizer"
+            };
+
+            // Mostrar el producto reseñado o "Desconocido"
+            document.getElementById("reviewed-product").textContent = productNames[productId] || "Unknown Product";
+
+            // Contador de reseñas
+            let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            document.getElementById("review-count").textContent = reviewCount;
+        });
+    </script>
+</body>
+</html>
+

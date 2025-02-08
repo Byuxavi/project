@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="review-form">
+        <h2>Product Review</h2>
+        
+        <!-- Product Name -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <option value="fc-1888">Flux Capacitor</option>
+            <option value="fc-2050">Power Laces</option>
+            <option value="fs-1987">Time Circuits</option>
+            <option value="ac-2000">Low Voltage Reactor</option>
+            <option value="jj-1969">Warp Equalizer</option>
+        </select>
+
+        </select>
+        
+        <!-- Overall Rating -->
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+        </fieldset>
+        
+        <!-- Date of Installation -->
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install-date" required>
+        
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features:</legend>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="features" value="durability">
+                <label for="feature1">🛡️ Durability</label>
+        
+                <input type="checkbox" id="feature2" name="features" value="performance">
+                <label for="feature2">⚡ Performance</label>
+        
+                <input type="checkbox" id="feature3" name="features" value="ease-of-use">
+                <label for="feature3">🎛️ Ease of Use</label>
+        
+                <input type="checkbox" id="feature4" name="features" value="design">
+                <label for="feature4">🎨 Design</label>
+            </div>
+        </fieldset>
+        
+        <!-- Written Review -->
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review"></textarea>
+        
+        <!-- User Name -->
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+    
+    <script src="js/script.js"></script>
+    <footer>
+        <p>&copy; 2025 Javier Manosalva. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
