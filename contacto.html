@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Javier Manosalva</title>
+    <meta name="description" content="Formulario de contacto para consultas sobre terapia ocupacional, salud mental y conferencias con Javier Manosalva.">
+    <meta name="author" content="Javier Manosalva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="inicio.html">Javier Manosalva</a></div>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contrataciones</a></li>
+            </ul>
+            <a href="https://wa.me/35679312793" class="whatsapp-button" target="_blank" aria-label="Contactar por WhatsApp">WhatsApp</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h1>Contacto</h1>
+            <p>Si tienes alguna consulta sobre mis servicios de terapia, conferencias o cursos, no dudes en escribirme.</p>
+        </section>
+
+        <!-- Sección de Formulario -->
+        <section class="contact-form">
+            <form id="contact-form" method="post" action="send_contact.php">
+                <h2>Envíame un mensaje</h2>
+
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Ej. Juan Pérez">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="tucorreo@example.com">
+
+                <label for="phone">Teléfono (Opcional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="+34 600 123 456">
+
+                <label for="consulta">Motivo de la consulta:</label>
+                <select id="consulta" name="consulta" required>
+                    <option value="" disabled selected hidden>Selecciona una opción...</option>
+                    <option value="terapia">Consulta sobre terapia</option>
+                    <option value="charlas">Conferencias y eventos</option>
+                    <option value="cursos">Información sobre cursos</option>
+                    <option value="general">Otras dudas</option>
+                </select>
+
+                <label for="message">Tu Mensaje:</label>
+                <textarea id="message" name="message" required placeholder="Escribe tu consulta aquí..."></textarea>
+
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</label>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje">
+            </form>
+        </section>
+
+        <!-- Contacto Directo -->
+        <section class="contact-info">
+            <h2>También puedes contactarme directamente</h2>
+            <p><strong>Correo:</strong> <a href="mailto:contacto@javiermanosalva.com">contacto@javiermanosalva.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34600123456">+34 600 123 456</a></p>
+            <p><strong>Ubicación:</strong> Madrid, España</p>
+        </section>
+
+        <!-- Mapa de Ubicación -->
+        <section class="contact-map">
+            <h2>Encuéntrame aquí</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dXXXXXX!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997822ff19b%3A0xa0c5baf6f30f17c0!2sMadrid%2C+España!5e0!3m2!1ses!2ses!4vXXXXXXX"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Contacto por WhatsApp -->
+        <section class="contact-whatsapp">
+            <h2>¿Prefieres hablar por WhatsApp?</h2>
+            <p>Haz clic en el botón y te responderé lo antes posible.</p>
+            <a href="https://wa.me/35679312793" target="_blank" class="cta-button">Enviar mensaje por WhatsApp</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Javier Manosalva. Todos los derechos reservados.</p>
+        <p><a href="inicio.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>

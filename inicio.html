@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Manosalva - Terapia Ocupacional y Salud Mental</title>
+    <meta name="description" content="Promoción de salud mental, terapia ocupacional y conferencias de Javier Manosalva.">
+    <meta name="keywords" content="salud mental, terapia ocupacional, bienestar, conferencias, Javier Manosalva">
+    <meta name="author" content="Javier Manosalva">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inicio.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    
+    <header>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/W12pbExle5M?autoplay=1&mute=1&loop=1&playlist=W12pbExle5M" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen 
+                class="background-video"
+                loading="lazy"
+                title="Video de presentación">
+            </iframe>
+            <div class="overlay"></div>
+        </div>
+        
+        <!-- Sección HERO sobre el video -->
+        <section class="hero">
+            <h1>Javier Manosalva</h1>
+            <p>Especialista en Terapia Ocupacional, Salud Mental y Conferencista</p>
+            <a href="contacto.html" class="cta-button">Descubre cómo puede ayudarte →</a>
+        </section>
+
+        <nav class="navbar">
+            <div class="logo">Javier Manosalva</div>
+            <ul class="nav-links">
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contrataciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://wa.me/35679312793" target="_blank" class="whatsapp-button">WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>¿Cómo puedo contactar a Javier Manosalva para una conferencia?</h3>
+                    <p>Puedes contactarlo a través del formulario de <a href="contacto.html">Contacto</a> o enviando un correo a <a href="mailto:contacto@javiermanosalva.com">contacto@javiermanosalva.com</a>.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Dónde puedo encontrar información sobre sus cursos de salud mental?</h3>
+                    <p>Visita la sección de <a href="#">Cursos</a> para ver toda la información disponible sobre sus programas y fechas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <h2>Situaciones en las que aquí podrás recibir ayuda:</h2>
+            <ul class="help-list">
+                <li>Ansiedad y estrés en el trabajo.</li>
+                <li>Depresión y falta de motivación.</li>
+                <li>Mejorar la autoestima y la confianza.</li>
+                <li>Manejo de emociones en momentos difíciles.</li>
+                <li>Relaciones interpersonales y resolución de conflictos.</li>
+                <li>Adaptación a cambios importantes en la vida.</li>
+            </ul>
+        </section>
+        <script>
+            document.querySelector('.help-section').addEventListener('click', function(e) {
+                // Verifica si el clic fue en h2, li o dentro de la sección
+                if (e.target.tagName === 'H2' || e.target.tagName === 'LI' || e.target.classList.contains('help-section')) {
+                    window.location.href = 'contacto.html';
+                }
+            });
+        </script>
+        <section class="articles">
+            <h2>Artículos destacados</h2>
+            <article class="article">
+                <h3>Cómo manejar la ansiedad en tiempos de incertidumbre</h3>
+                <p>Aprende estrategias efectivas para controlar la ansiedad y mejorar tu bienestar emocional.</p>
+                <a href="articulo-ansiedad.html">Leer más →</a>
+            </article>
+            <article class="article">
+                <h3>La importancia de la terapia ocupacional en la salud mental</h3>
+                <p>Descubre cómo la terapia ocupacional puede ayudarte a mejorar tu calidad de vida.</p>
+                <a href="articulo-terapia.html">Leer más →</a>
+            </article>
+        </section>
+
+        <section class="therapy-online">
+            <h2>Terapia Online</h2>
+            <p>Mi trabajo es coordinar esta plataforma de salud integrativa en la que te brindaremos la ayuda que necesitas.</p>
+            <p>Todos tenemos una historia que contar y un pasado que puede impedirnos avanzar. Puede hacernos mucho daño o podemos trabajarlo para aprender a aceptarlo e incluso, en algunas ocasiones, servirnos de impulso.</p>
+            <a href="contacto.html" class="cta-button">Agenda tu sesión →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Javier Manosalva. Todos los derechos reservados.</p>
+        <p><a href="https://app.moqups.com/v6iVUAC8klU7PE0ZjtRhCGkpFOTuwgWW/view/page/ad64222d5" target="_blank">Ver Wireframe</a></p>
+    </footer>
+
+</body>
+</html>

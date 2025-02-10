@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #102A43;
+    --secondary-color: #3E92CC;
+    --accent-color: #F4A261;
+    --text-color: #FFFFFF;
+    --background-overlay: rgba(16, 42, 67, 0.75);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #081B29;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(16, 42, 67, 0.85);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.whatsapp-button {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.whatsapp-button:hover {
+    background: #E76F51;
+    transform: scale(1.05);
+}
+
+/* Header de Videos */
+.video-header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    padding: 60px 20px;
+    margin-top: 70px;
+}
+
+.video-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #E76F51;
+    transform: scale(1.05);
+}
+
+/* Categorías de Videos */
+.video-categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.category-button:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Galería de Videos */
+.video-gallery {
+    padding: 40px 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-card {
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.video-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
